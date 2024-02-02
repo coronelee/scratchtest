@@ -100,15 +100,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       span {
-        z-index: 5;
         position: absolute;
+        z-index: 5;
         color: white;
         font-family: "Lato", sans-serif;
         font-weight: 700;
         font-size: 25px;
       }
       div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         clip-path: fill-box;
         transition: 0.5s all;
         left: 0;
@@ -264,4 +271,3 @@
     }
   }
 }
-

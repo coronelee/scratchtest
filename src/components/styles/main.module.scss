@@ -83,6 +83,9 @@
     letter-spacing: 0em;
     text-align: center;
     color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
   }
   .footer__help {
     width: 100%;
@@ -116,16 +119,16 @@
     text-align: center;
     background-color: transparent;
     color: rgba(158, 158, 158, 0.3);
-    border: 1px rgba(158, 158, 158, 0.3) solid
+    border: 1px rgba(158, 158, 158, 0.3) solid;
   }
-  .logoDiv{
+  .logoDiv {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    .logo{
-      background-image: url('/public/logo.png');
-      background-size: contain; 
+    .logo {
+      background-image: url("/public/logo.png");
+      background-size: contain;
       height: 40px;
       width: 140px;
       background-repeat: no-repeat;

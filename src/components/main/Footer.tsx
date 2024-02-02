@@ -1,5 +1,7 @@
+import { useState } from "react";
 import styles from "../styles/main.module.scss";
 export default function Footer() {
+  const [fullText, setFullText] = useState(true)
   return (
     <div className={styles.wrapper__footer}>
       <span className={styles.footer__help}>NEED HELP?</span>
@@ -7,7 +9,7 @@ export default function Footer() {
         <span>Terms Of Services</span>
         <span>Privacy Policy</span>
       </div>
-      <span>
+      <span style={fullText ? {lineClamp: 3, WebkitLineClamp: 3} : {lineClamp:"auto"}}>
         * Information is not a public offer This site is not part of the
         Facebook or Facebook Inc. website. Also, this site is not endorsed by
         Facebook in any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook
@@ -38,7 +40,7 @@ export default function Footer() {
         participate without signing up for a three-day trial at Toolsandtoys,
         please email.
       </span>
-      <button>Read less</button>
+      <button onClick={() => setFullText(!fullText)}>{!fullText ? "Read less" : "Read more"}</button>
       <div className={styles.logoDiv}>
         <div className={styles.logo}></div>
         <span>© 2023 DressMe</span>
