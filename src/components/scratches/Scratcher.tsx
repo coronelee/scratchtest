@@ -71,7 +71,7 @@ export default function Scratcher() {
   const buttonActive =
     "linear-gradient(136.38deg, #854aaa 5.28%, #bd78c9 20.78%, #854aaa 34.87%,#4d2680 50.37%,#854aaa 65.88%, #b97ec8 80.44%,#854aaa 95.47%), url('/public/pattern.png')";
   const buttonNotActive =
-    "linear-gradient(136.38deg, #854aaac0 5.28%, #bd78c9c0 20.78%, #854aaac0 34.87%,#4d2680c0 50.37%,#854aaac0 65.88%, #b97ec8c0 80.44%,#854aaac0 95.47%), url('/public/pattern.png')";
+    "linear-gradient(136.38deg, #854aaa80 5.28%, #bd78c980 20.78%, #854aaa80 34.87%,#4d268080 50.37%,#854aaa80 65.88%, #b97ec880 80.44%,#854aaa80 95.47%), url('/public/pattern.png')";
 
   const errorModal =
     "linear-gradient(116.9deg, #FF6948 0%, #FF8B8B 24.48%, #FF6948 48.96%, #FFBD80 75%, #FF6948 100%)";

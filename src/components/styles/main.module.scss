@@ -25,23 +25,27 @@
     height: 180px;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(34,18,50,1) 100%);
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(34, 18, 50, 1) 100%
+    );
     position: absolute;
     bottom: 0;
     button {
       width: 350px;
       height: 130px;
-      border: 0; 
+      border: 0;
       background: linear-gradient(
-        135.62deg,
-        #e0e0e0c0 5.14%,
-        #ffdafbc0 20.17%,
-        #e0e0e0c0 35.67%,
-        #ffdafbc0 50.23%,
-        #e0e0e0c0 65.73%,
-        #ffdafbc0 79.82%,
-        #e0e0e0c0 95.32%
+          135.62deg,
+          #e0e0e0c0 5.14%,
+          #ffdafbc0 20.17%,
+          #e0e0e0c0 35.67%,
+          #ffdafbc0 50.23%,
+          #e0e0e0c0 65.73%,
+          #ffdafbc0 79.82%,
+          #e0e0e0c0 95.32%
         ),
         url("/public/pattern.png");
       font-family: "Lato", sans-serif;
@@ -52,12 +56,79 @@
       align-items: center;
       flex-direction: column;
       font-size: 28px;
-      color: rgba($color: #31194b, $alpha: 1.0);
-      span{
-        &:last-child{
-            font-weight: 700;
+      color: rgba($color: #31194b, $alpha: 1);
+      span {
+        &:last-child {
+          font-weight: 700;
         }
       }
+    }
+  }
+}
+.wrapper__footer {
+  width: calc(100vw - 40px);
+  height: auto;
+  background-color: rgba(98, 49, 134, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  span {
+    font-family: Roboto;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  .footer__help {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(253, 234, 206, 1);
+  }
+  div {
+    display: flex;
+    gap: 20px;
+    span {
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(247, 100, 135, 1);
+    }
+  }
+  button {
+    font-family: "Lato", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: transparent;
+    color: rgba(158, 158, 158, 0.3);
+    border: 1px rgba(158, 158, 158, 0.3) solid
+  }
+  .logoDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+      background-image: url('/public/logo.png');
+      background-size: contain; 
+      height: 40px;
+      width: 140px;
+      background-repeat: no-repeat;
     }
   }
 }

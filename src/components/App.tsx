@@ -1,3 +1,4 @@
+import Footer from "./main/Footer";
 import MainWindow from "./main/MainWindow";
 import Scratcher from "./scratches/Scratcher";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <MainWindow />
       <Scratcher />
+      <Footer />
     </>
   );
 }
